@@ -171,8 +171,9 @@ nav ul.dropdown-list {
 }
 
 .mobile ul.nav-list {
-    background: -webkit-linear-gradient(45deg, #434343, #000000);
-    background: linear-gradient(45deg, #434343, #000000);
+    /* background: -webkit-linear-gradient(45deg, #434343, #000000);
+    background: linear-gradient(45deg, #434343, #000000); */
+    background-color: white;
     position: fixed;
     left: 0;
     top: 0;

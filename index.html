@@ -17,7 +17,7 @@
 
 <body>
   <div id="navbar">
-    <nav>
+    <nav class="fixed-top my-nav-2">
       <div class="container nav-wrapper">
         <div class="brand">
           <svg width="64" height="45" viewBox="0 0 64 60" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -57,19 +57,60 @@
       </div>
       <div class="col-12 col-lg-6">
         <div class="my-info">
-          <h1 class="greeting txt-grad wow animate__animated animate__backInRight" data-wow-duration="1s" data-wow-delay="1.5s">GOOD MORNING</h1>
+          <h1 class="greeting txt-grad wow animate__animated animate__backInRight" data-wow-duration="1s" data-wow-delay="1.5s"></h1>
           <h3 class="name txt-grad wow animate__animated animate__bounceInLeft" data-wow-duration="1s" data-wow-delay="2s">I AM SHIVAM</h3>
           <h5 class="def txt-grad wow animate__animated animate__bounceInLeft" data-wow-duration="1s" data-wow-delay="2s">(NOT AN AVERAGE DEVELOPER)</h5>
-
-          <div class="explore-btn wow animate__animated animate__backInUp" data-wow-duration="1s" data-wow-delay="3s">EXPLORE ME</div>
+          <a href="#about-section"><div class="explore-btn wow animate__animated animate__bounceInRight" data-wow-duration="1s" data-wow-delay="3s">EXPLORE ME</div></a>
         </div>
       </div>
     </div>
-    <div>
-      <div class="row">
-        <div class="col-4"></div>
-        <div class="col-4"></div>
-        <div class="col-4"></div>
+    <div id="about-section">
+      <h2 class="txt-grad about-heading wow animate__animated animate__rubberBand">ABOUT</h2>
+      <div class="row justify-content-around">
+        <div class="col-6 col-lg-3">
+          <div class="about-container">
+            <div class="icon-container">
+              <img src="./assets/svgs/fast-delivery.svg" alt="" srcset="">
+            </div>
+            <div class="about-info">
+              <h3 class="txt-grad about-info-head">FAST</h3>
+              <p class="txt-grad">Nobody likes slow stuff. An ideal website has to be fast.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3">
+          <div class="about-container">
+            <div class="icon-container">
+              <img src="./assets/svgs/responsive.svg" alt="" srcset="">
+            </div>
+            <div class="about-info">
+              <h3 class="txt-grad about-info-head">RESPONSIVE</h3>
+              <p class="txt-grad">The website will change itself according to the device</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3">
+          <div class="about-container">
+            <div class="icon-container">
+              <img src="./assets/svgs/user-experience.svg" alt="" srcset="">
+            </div>
+            <div class="about-info">
+              <h3 class="txt-grad about-info-head">ELEGANT</h3>
+              <p class="txt-grad">Its not just about coding,its about designing too.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3">
+          <div class="about-container">
+            <div class="icon-container">
+              <img src="./assets/svgs/dynamic.svg" alt="" srcset="">
+            </div>
+            <div class="about-info">
+              <h3 class="txt-grad about-info-head">DYNAMIC</h3>
+              <p class="txt-grad">Things dont look good when they are static.Lets make them move!</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
