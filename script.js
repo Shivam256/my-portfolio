@@ -120,6 +120,14 @@ if (window.innerWidth > 860) {
     background:"#3e045b"
   })
 
+  const skillIcons = document.querySelectorAll(".example-skill-icon");
+  for(let i of skillIcons){
+    cursor.over(i,{
+      scale:1.4,
+      background: "#c1fba4"
+    })
+  }
+
   // window.onscroll = function () {
   //   myFunction()
   // };
@@ -176,6 +184,61 @@ hamburger.addEventListener('click', function () {
 })
 
 //================================================================
-window.onbeforeunload = function () {
-  window.scrollTo(0, 0);
+
+
+//================skill section js==========================
+
+const skillNames = ["HTML","CSS","JAVASCRIPT","REACT JS","NODE JS","EXPRESS JS","MONGO DB","FIREBASE","REDUX","C++"];
+
+const skillLevels = [95,80,85,75,70,80,85,72,75,97];
+const skillContainer = document.querySelector(".skill-level-container");
+
+const createSkill = (names,levels)=>{
+  const skillLevel = document.createElement("div");
+  skillLevel.classList.add("skill-level");
+  const skillName = document.createElement("div");
+  skillName.classList.add("skill-name");
+  const skillLv = document.createElement("div");
+  skillLv.classList.add("skill-lv");
+  const skilllvMastered = document.createElement("div");
+  skilllvMastered.classList.add("skill-mastered-lv");
+
+  skillName.textContent = names;
+  skilllvMastered.style.width = `${levels}%`;
+
+  skillLv.append(skilllvMastered);
+  skillLevel.append(skillName,skillLv);
+
+
+  // let r = document.querySelector(":root");
+  // console.log(getComputedStyle(r).getPropertyValue('--mastery'));
+  // r.style.setProperty('--mastery',`${levels}%`);
+  return skillLevel;
 }
+
+for(let i=0; i<skillLevels.length; i++){
+  const skill = createSkill(skillNames[i],skillLevels[i]);
+  skillContainer.append(skill);
+
+}
+
+
+// const lvs = document.querySelectorAll(".skill-mastered-lv");
+
+// let id = null;
+// for(let i=0; i<skillLevels.length; i++){
+//   let wdS = skillLevels[i];
+//   let ctr = 0;
+//   clearInterval(id);
+//   let currSkill = lvs[i];
+//   id = setInterval(moveSkill,1);
+//   function moveSkill(){
+//     if(currSkill.style.width == `${wdS}%`){
+//       clearInterval(id);
+//     }
+//     else{
+//       currSkill.style.width = `${ctr}%`;
+//       ctr = ctr+1;
+//     }
+//   } 
+// }

@@ -1,0 +1,63 @@
+#about-section {
+  margin-top: 20vh;
+  min-height: 50vh;
+  width: 100%;
+  /* background-color: red; */
+  padding: 1em 1em;
+  border-top: 2px solid #7209b7;
+}
+#about-section .about-heading {
+  text-align: center;
+  font-size: 2em;
+  font-weight: 600;
+}
+
+#about-section .about-container {
+  min-height: 45vh;
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  transform: scale(0.8);
+  transition: all ease-in-out 0.5s;
+}
+#about-section .about-container:hover {
+  transform: scale(0.85);
+}
+#about-section .about-container .icon-container {
+  max-width: 20vh;
+  margin: 1vh auto;
+  animation: floatImg 3s ease-in-out infinite;
+}
+@keyframes floatImg {
+  0% {
+    transform: translate(0, 0px);
+  }
+  50% {
+    transform: translate(0, 10px);
+  }
+  100% {
+    transform: translate(0, -0px);
+  }
+}
+
+#about-section .about-container .icon-container img {
+  max-height: 20vh;
+  max-width: 20vh;
+  margin: 1vh auto;
+}
+#about-section .about-container .about-info {
+  min-height: 20vh;
+  max-width: 100%;
+  /* background-color: yellow; */
+  text-align: center;
+}
+#about-section .about-container .about-info .about-info-head {
+  font-size: 2em;
+  font-weight: 600;
+  margin-bottom: 0.5em;
+}
+#about-section .about-container .about-info p {
+  font-size: 1.2em;
+  margin: 0.5em 0.5em;
+}
+
+

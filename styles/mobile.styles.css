@@ -1,0 +1,180 @@
+@media only screen and (max-width: 860px) {
+  #screen {
+    padding-top: 0vh;
+    min-width: 100vw;
+    overflow-x: hidden;
+  }
+  .img-container {
+    min-height: 40vh;
+    max-height: 40vh;
+  }
+  .my-info {
+    min-height: 50vh;
+    max-height: 50vh;
+  }
+  .greeting {
+    font-size: 2em;
+    font-weight: 600;
+  }
+  .name {
+    margin-top: 1em;
+    font-size: 1.5em;
+    font-weight: 600;
+  }
+  .def {
+    font-size: 1em;
+    font-weight: 600;
+  }
+  .explore-btn {
+    margin-top: 3em;
+  }
+
+  #about-section .about-container {
+    min-height: 20vh;
+    max-height: 20vh;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    transform: scale(0.9);
+    transition: all ease-in-out 0.5s;
+  }
+  #about-section .about-container:hover{
+    scale:(1);
+  }
+
+  #about-section .about-container .icon-container {
+    margin: 1vh auto;
+    animation: none;
+    max-width: 13vh;
+  }
+  #about-section .about-container .icon-container img {
+    max-height: 13vh;
+    max-width: 13vh;
+    margin: 1vh auto;
+  }
+  #about-section .about-container .about-info {
+    max-height: 17vh;
+    max-width: 100%;
+    /* background-color: yellow; */
+    text-align: center;
+  }
+  #about-section .about-container .about-info .about-info-head {
+    font-size: 1.2em;
+    font-weight: 600;
+    margin-bottom: 0.5em;
+  }
+
+
+
+  #skill-section{
+    width: 100%;
+    min-height: 90vh;
+    min-width: 100vw;
+    overflow-x: hidden;
+    /* background-color: teal; */
+    border-top: 2px solid #7209b7;
+  }
+  /* #skill-section .skill-head{
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: 600;
+    margin: 0.4em auto 0.4em;
+  } */
+  .skill-img-container{
+    min-height: 40vh;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+  }
+  .skill-level-container{
+    min-height: 50vh;
+    background-color: rgb(255, 255, 255);
+  }
+
+  .skill-icons{
+    width: 100%;
+    min-height: 5vh;
+    background-color: #b5179e;
+    display: block;
+  }
+  
+  .skill-img-container .my-skill-icon{
+    min-height: 5vh;
+    min-width: 5vh;
+    animation:  floatImg ease-in-out 3s infinite;
+    position: relative;
+  }
+  #js-icon{
+    top: 10vh;
+    left: -20vh;
+  }
+  #html-icon{
+    top: 20vh;
+    left: -90vw;
+  }
+  #css-icon{
+    top: 10vh;
+    left: -90vw;
+  }
+  #cpp-icon{
+    top: 20vh;
+    left: -55vw;
+  }
+  #react-icon{
+    top: 10vh;
+    left: -90vw;
+  }
+  #node-icon{
+    top: 30vh;
+    left: -70vw;
+  }
+  #redux-icon{
+    top: 30vh;
+    left: -140vw;
+  }
+  #firebase-icon{
+    display: none;
+  }
+  #mongo-icon{
+    display: none;
+  }
+
+  
+.skill-level{
+  width: 100%;
+  min-height: 5vh;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 0.5em;
+}
+.skill-name{
+  min-height: 3vh;
+  max-height: 3vh;
+  min-width: 20%;
+  max-width: 20%;
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+  padding: 0.1em 0;
+  float: left;
+  color: #7209B7;
+  font-size: 0.7em;
+  font-weight: 600;
+  border: 2px solid #7209B7;
+}
+.skill-lv{
+  min-height: 3vh;
+  max-height: 3vh;
+  min-width: 70%;
+  max-width: 70%;
+  background-color: rgb(255, 255, 255);
+  float: left;
+  border:1px solid #7209B7;
+}
+.skill-mastered-lv{
+  width: 0%;
+  min-height: 3vh;
+  background: linear-gradient(90deg, #7209B7 0%, #B5179E 100%);
+  /* transition: width 1s ease-in-out; */
+  /* animation: skillMove 1s ease-in-out forwards; */
+}
+}
