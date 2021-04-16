@@ -276,3 +276,11 @@ skillSection.addEventListener("mouseenter",()=>{
 skillSection.addEventListener("mouseleave",()=>{
   navs[2].classList.remove("active");
 })
+
+document.readyState(()=>{
+  document.body.opacity = "0";
+})
+
+document.body.onload = () =>{
+  document.body.opacity = "1";
+}
