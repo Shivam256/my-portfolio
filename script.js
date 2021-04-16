@@ -4,6 +4,11 @@ const img = document.querySelector(".img-container");
 const btn = document.querySelector(".explore-btn");
 const greet = document.querySelector(".greeting");
 
+const homeSection = document.querySelector("#screen");
+const aboutSection = document.querySelector("#about-section");
+const skillSection = document.querySelector("#skill-section");
+const navs = document.querySelectorAll(".nav-list li");
+
 
 //gatting the time of day for greeting
 var today = new Date()
@@ -242,3 +247,32 @@ for(let i=0; i<skillLevels.length; i++){
 //     }
 //   } 
 // }
+
+// skillSection.addEventListener("mouseenter",()=>{
+//   console.log("in skill section");
+// })
+// skillSection.addEventListener("mouseleave",()=>{
+//   console.log("out of skill section");
+// })
+
+//changing the nav active state accirding the position of element
+homeSection.addEventListener("mouseenter",()=>{
+  navs[0].classList.add("active");
+});
+homeSection.addEventListener("mouseleave",()=>{
+  navs[0].classList.remove("active");
+});
+
+aboutSection.addEventListener("mouseenter",()=>{
+  navs[1].classList.add("active");
+});
+aboutSection.addEventListener("mouseleave",()=>{
+  navs[1].classList.remove("active");
+});
+
+skillSection.addEventListener("mouseenter",()=>{
+  navs[2].classList.add("active");
+})
+skillSection.addEventListener("mouseleave",()=>{
+  navs[2].classList.remove("active");
+})
