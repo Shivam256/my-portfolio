@@ -115,7 +115,8 @@ a {
 
 .img-container {
   min-height: 80vh;
-  background-image: url("./assets/images/19362653.jpg");
+  background-image: url("https://image.freepik.com/free-vector/web-development-programmer-engineering-coding-website-augmented-reality-interface-screens-developer-project-engineer-programming-software-application-design-cartoon-illustration_107791-3863.jpg");
+  /* background-image: url("./assets/images/19362653.jpg"); */
   background-position: center;
   background-size: cover;
   position: relative;
