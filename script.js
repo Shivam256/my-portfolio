@@ -1,4 +1,5 @@
 // import curDot from 'cursor-dot';
+alert("This portfolio is still under development! A lot of changes are to be made.")
 new WOW().init();
 const img = document.querySelector(".img-container");
 const btn = document.querySelector(".explore-btn");
@@ -189,7 +190,15 @@ hamburger.addEventListener('click', function () {
 })
 
 //================================================================
+btn.addEventListener("click",()=>{
+  if(window.innerWidth > 860){
+    window.scrollBy(0,(window.innerHeight));
+  }
+  else{
+    window.scrollBy(0,(window.innerHeight)*(0.9));
+  }
 
+});
 
 //================skill section js==========================
 
@@ -214,10 +223,6 @@ const createSkill = (names,levels)=>{
   skillLv.append(skilllvMastered);
   skillLevel.append(skillName,skillLv);
 
-
-  // let r = document.querySelector(":root");
-  // console.log(getComputedStyle(r).getPropertyValue('--mastery'));
-  // r.style.setProperty('--mastery',`${levels}%`);
   return skillLevel;
 }
 
@@ -236,10 +241,11 @@ for(let i=0; i<skillLevels.length; i++){
 //   let ctr = 0;
 //   clearInterval(id);
 //   let currSkill = lvs[i];
-//   id = setInterval(moveSkill,1);
+//   id = setInterval(moveSkill,5);
 //   function moveSkill(){
 //     if(currSkill.style.width == `${wdS}%`){
 //       clearInterval(id);
+//       continue;
 //     }
 //     else{
 //       currSkill.style.width = `${ctr}%`;

@@ -1,7 +1,8 @@
 @media only screen and (max-width: 860px) {
   #screen {
     padding-top: 0vh;
-    min-width: 100vw;
+    min-width: fit-content;
+    /* max-width: fit-content; */
     overflow-x: hidden;
   }
   .img-container {
@@ -26,7 +27,10 @@
     font-weight: 600;
   }
   .explore-btn {
-    margin-top: 3em;
+    margin-top: 2em;
+  }
+  #about-section{
+    margin-top: 2em;
   }
 
   #about-section .about-container {
@@ -38,13 +42,13 @@
     transition: all ease-in-out 0.5s;
   }
   #about-section .about-container:hover{
-    scale:(1);
+    transform: scale(0.9);
   }
 
   #about-section .about-container .icon-container {
     margin: 1vh auto;
-    animation: none;
     max-width: 13vh;
+    animation: floatImg 3s ease-in-out infinite;
   }
   #about-section .about-container .icon-container img {
     max-height: 13vh;
